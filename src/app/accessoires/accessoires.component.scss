@@ -1,0 +1,67 @@
+.velo{
+    width: 100%;
+    display: flex;
+    background-color:#f5f8fa;
+    justify-content: space-around;
+}
+.velo .filtre , .velo .showroom {
+    margin: 40px 0;
+}
+.velo .filtre {
+    background-color: white;
+    box-shadow: 3px 3px 15px rgb(172, 170, 170);
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+}
+.categorie, .roue, .taille, .cadre{
+    padding: 30px 0 20px;
+}
+
+
+.velo .showroom {
+    width: 75%;
+}
+.velo .showroom .listgrid i{
+    padding: 10px;
+    margin-left: 10px; 
+}
+.velo .showroom .listgrid i:hover{
+    cursor: pointer;
+}
+.velo .showroom .listgrid button{
+    float: right;
+    margin-right: 45px;
+    margin-top: 9px;
+    background-color: #00BE9E;
+    color: white;
+    padding: 2px 48px;
+}
+.velo .showroom .listgrid span{
+    font-size: 35px;
+    padding-left: 28px;
+}
+.velos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0 30px;
+}
+.velos .article{
+    width: 30%;
+    height: 240px;
+    margin-top: 30px;
+    background-color: rgb(253, 247, 247);
+    box-shadow: 3px 3px 10px rgb(172, 170, 170) ;
+}
+.pages{
+    display: flex;
+    justify-content: center;
+}
+.pages i{
+    padding: 10px 20px;
+    margin-top: 17px;
+}
+.pages p{
+    padding: 10px 10px;
+}
