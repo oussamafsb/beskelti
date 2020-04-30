@@ -10,16 +10,18 @@ import { AuthService , SocialUser , FacebookLoginProvider} from 'angularx-social
 export class ProfileComponent implements OnInit {
   public user : any = SocialUser;
   constructor(private socialAuthService : AuthService) {
-    this.facebookLogin();
+    this.facebookLogin(); 
    }
 
   ngOnInit() {
+    this.socialAuthService.authState.subscribe((user) => {
+      this.user = user;
+    }); 
+
   }
   facebookLogin(){
-    console.log('hi there');
-    this.socialAuthService.signIn(FacebookLoginProvider.PROVIDER_ID).then((userData) => {
-      this.user = userData;
-    });
+
+    this.socialAuthService.signIn(FacebookLoginProvider.PROVIDER_ID);
     console.log(this.user);
   }
 }
